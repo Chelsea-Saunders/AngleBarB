@@ -63,7 +63,7 @@ img.dropdown-toggle:hover {
   background-color: #f0f0f0;
   color: #333;
 }
-.login-button {
+/* .login-button {
   background-color: #6f7364;
   color: white;
   border: none;
@@ -91,7 +91,7 @@ img.dropdown-toggle:hover {
   border-radius: 5px;
   font-family: 'Antonio', sans-serif;
   transition: background-color 0.3s ease;
-}
+} */
 .main-button {
   display: flex;
   flex-direction: column;
@@ -148,10 +148,10 @@ img.dropdown-toggle:hover {
   justify-content: space-between;
   height: 100%;
 }
-#shop-all, #wearables, #leather, 
-#bio, #custom-leather, #photography {
+img#shop-all, img#wearables, img#leather, 
+img#bio, img#custom-leather, img#photography {
   border-radius: 125%;
-  width: 50%;
+  width: 90%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -475,9 +475,18 @@ p#two {
 
 /* tablet screen width */
 @media (min-width: 500px) and (max-width: 900px) {
-  .logo {
-    width: 200px;
+  .header {
+    margin-bottom: 30px;
   }
+  .logo {
+    width: 300px;
+    margin: 0 auto;
+  }
+  img.dropdown-toggle {
+    width: 8%;
+    padding: 10px;
+  }
+   
   .page-links-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -496,15 +505,49 @@ p#two {
   #about-me {
     width: 60%;
   }
-  img.dropdown-toggle {
+  
+  /* img.dropdown-toggle {
     width: 5%;
-  }
+  } */
 }
 
 /* Large screen width */
 @media (min-width: 901px) {
-  .logo {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  img.dropdown-toggle {
+    display: none;
+  }
+  .logo { 
     width: 200px;
+    margin: 0;
+  }
+  .dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .dropdown-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    /* background-color: transparent; */
+    opacity: 1;
+    max-height: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .dropdown-links a {
+    font-size: 0.9rem;
+    flex: 0 0 auto;
   }
   
   .page-links-container {
@@ -523,9 +566,6 @@ p#two {
   }
   #about-me {
     width: 30%;
-  }
-  img.dropdown-toggle {
-    width: 5%;
   }
 
   .about-me       { grid-area: about; }
