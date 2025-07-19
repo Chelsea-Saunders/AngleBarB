@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/nai-nai.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/imagecompressor/logo.jpg" alt="Logo">
+        
+        <!-- <button class="login-button">Login</button> -->
+    </header>
+    <div id="content">
+        <main class="main">
+            <nav class="page-links-container">
+                <section class="main-button about-me" data-link="about-me.html">
+                    <div class="wrapper">
+                        <img id="bio" src="./images/imagecompressor/nai.jpg" alt="Image of Chenai">
+                        <p>About Me</p>
+                    </div>
+                </section>
+                <section class="main-button shop-all" data-link="shop-all.html">
+                    <div class="wrapper"> 
+                        <img id="shop-all" src="./images/imagecompressor/mr-mrs.jpg" alt="Champaine Glasses with handmade leather grips">
+                        <p>Shop All</p>
+                    </div>
+                </section>
+                <section class="main-button leather" data-link="leather.html">
+                    <div class="wrapper">
+                        <img id="leather" src="./images/imagecompressor/birkenstocks.png" alt="Tooled leather birkenstocks">
+                        <p>Leather</p>
+                    </div>
+                </section>
+                <section class="main-button wearables" data-link="wearable.html">
+                    <div class="wrapper">
+                        <img id="wearables" src="./images/imagecompressor/brown-saddle-tie-min.png" alt="Hand drawn graphics, printed on onsie">
+                        <p>Wearables</p>
+                    </div>
+                </section>
+                <section class="main-button custom-leather" data-link="custom-leather.html">
+                    <div class="wrapper">
+                        <img id="custom-leather" src="./images/imagecompressor/welding-helmet.jpg" alt="hand crafted calanders">
+                        <p>Custom Leather</p>
+                    </div>
+                </section>
+                <section class="main-button photography" data-link="photography.html">
+                    <div class="wrapper">
+                        <img id="photography" src="./images/imagecompressor/roping-calf.png" alt="Idaho Cowboy-Association Photography and Personal Photography Page">
+                        <p>Photography</p>
+                    </div>
+                </section>
+            </nav>
+            <!-- Chat Bubble -->
+            <div class="chat-container">
+                <div class="chat-bubble" id="chatToggle">💬</div>
+                <div class="chat-box" id="chatBox">
+                    <div class="chat-header">
+                        <span>Need help?</span>
+                        <button id="closeChat">x</button>
+                    </div>
+                    <div class="chat-body">
+                        <form id="chat-form">
+                            <label for="chat-message">
+                                Hi! Do you have a question or want to special order a product? Let's talk aboutit!
+                            </label>
+                            <textarea id="chat-message" name="message" rows="4" required></textarea><br>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/nainaiphotoandleather/" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <p>Angle Bar B Leather &copy;</p>
+        </footer>
+    </div>
+</body>
+</html>

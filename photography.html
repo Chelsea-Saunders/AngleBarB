@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/nai-nai.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/imagecompressor/logo.jpg" alt="Logo">
+        
+        <div class="dropdown-container">
+            <img class="dropdown-toggle" src="./images/imagecompressor/dropdown.png" alt="Image of three lines indicating a dropdown bar.">
+
+            <nav class="dropdown-links">
+                <a href="index.html">Home</a>
+                <a href="shop-all.html">Shop All</a>
+                <a href="wearable.html">Wearables</a>
+                <a href="leather.html">Leather</a>
+                <a href="custom-leather.html">Custom Leather Orders</a>
+                <a href="about-me.html">About Me</a>
+                <a href="photography.html">Photography</a>
+                <!-- <button class="login-button">Login</button> -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slider-container" id="slider-container">
+            <div class="slideX">
+                <div class="slides">
+                    <img src="./images/imagecompressor/-8-second-ride.png" alt="Slide 1">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/bronc-ride.png" alt="Slide 2">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/falling-cowboy.png" alt="Slide 3">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/flying-bronc.png" alt="Slide 4">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/rodeo-bronc-ride.png" alt="Slide 5">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/rodeo-broncs.png" alt="Slide 6">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/roping-calf.png" alt="Slide 7">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/roping.png" alt="Slide 8">
+                </div>
+                <div class="slides">
+                    <img src="./images/imagecompressor/team-roping-calf.png" alt="Slide 9">
+                </div>
+            </div>
+        </div>
+        <p id="swipe-pix">Click and swipe left or right for more pictures</p>
+        <p id="description">Hi, I’m Chenai, the eye behind Angle Bar B 
+            Photography. For the past seven years, I’ve been capturing 
+            the heart and soul of rodeo life across Eastern Oregon. 
+            There’s something powerful about the grit, adrenaline, 
+            and tradition of the cowboy spirit — and I aim to preserve 
+            that in every crisp, storytelling shot. Through my lens, 
+            I keep those wild, unforgettable moments alive for the people
+             who live them and the ones who admire them.
+        </p>
+        <div class="contact-container">
+            <form action="" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="chat-bubble" id="chatToggle">💬</div>
+            <div class="chat-box" id="chatBox">
+                <div class="chat-header">
+                    <span>Need help?</span>
+                    <button id="closeChat">x</button>
+                </div>
+                <div class="chat-body">
+                    <form id="chat-form">
+                        <label for="chat-message">
+                            Hi! Do you have a question or want to special order a product? Let's talk about it!
+                        </label>
+                        <textarea id="chat-message" name="message" rows="4" required></textarea><br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <section id="custom-list"></section> -->
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/nainaiphotoandleather/" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+        <p>Angle Bar B Leather &copy;</p>
+    </footer>
+</body>
+</html>
+
+<!-- link to create a working contact form using html and css - 
+ receive contact from data on email
+ https://www.youtube.com/watch?v=-HeadgoqJ7A  -->
